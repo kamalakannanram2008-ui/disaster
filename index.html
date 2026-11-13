@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>DisasterReady AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">DisasterReady <span>AI</span></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#disasters">Disasters</a>
+        <a href="#map-section">Live Map</a>
+        <a href="#help">Emergency Help</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Predict. Prepare. Protect.</h1>
+
+        <p>
+            An intelligent disaster management platform
+            helping communities stay informed and prepared.
+        </p>
+
+        <a href="#dashboard" class="btn">
+            Explore Dashboard
+        </a>
+    </div>
+</section>
+
+<section id="dashboard" class="section">
+    <h2>Disaster Monitoring Dashboard</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Flood Risk</h3>
+            <h2 class="high">High</h2>
+            <p>Illustrative demo status</p>
+        </div>
+
+        <div class="card">
+            <h3>Cyclone Risk</h3>
+            <h2 class="medium">Medium</h2>
+            <p>Illustrative demo status</p>
+        </div>
+
+        <div class="card">
+            <h3>Landslide Risk</h3>
+            <h2 class="low">Low</h2>
+            <p>Illustrative demo status</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="disasters" class="section">
+    <h2>Disaster Information</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Flood</h3>
+            <p>Learn about flood preparedness
+            and safety information.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cyclone</h3>
+            <p>Understand cyclone warnings
+            and preparedness.</p>
+        </div>
+
+        <div class="card">
+            <h3>Landslide</h3>
+            <p>Learn about landslide risks
+            and safety precautions.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="map-section" class="section">
+    <h2>Disaster Location Map</h2>
+    <p>Explore the sample map and its locations.</p>
+
+    <div id="map"></div>
+</section>
+
+<section id="help" class="section">
+    <h2>Emergency Help Request</h2>
+
+    <form id="helpForm">
+
+        <input type="text"
+               id="person"
+               placeholder="Your Name"
+               required>
+
+        <input type="text"
+               id="location"
+               placeholder="Your Location"
+               required>
+
+        <select id="disaster">
+            <option value="Flood">Flood</option>
+            <option value="Cyclone">Cyclone</option>
+            <option value="Landslide">Landslide</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <textarea id="details"
+                  placeholder="Describe the emergency"
+                  required></textarea>
+
+        <button type="submit">
+            Submit Request
+        </button>
+
+    </form>
+
+    <p id="response"></p>
+</section>
+
+<footer>
+    <h3>DisasterReady AI</h3>
+    <p>Building a safer and more prepared future.</p>
+    <p>Hackathon Project | AI & Data Science</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
